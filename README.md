@@ -46,9 +46,6 @@ npm run dev
   - Will enable interactive Q&A about my experience and projects
   - Custom knowledge base integration planned
 
-## 📝 License
-
-MIT License - feel free to use this project as a template for your own portfolio!
 
 ## 🤝 Contact
 
