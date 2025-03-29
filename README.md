@@ -39,16 +39,21 @@ npm install
 npm run dev
 ```
 
+## 🌐 Deployment
+
+This site is deployed on Netlify.
+
+### Development Workflow
+1. Make changes locally and test
+2. Push changes to GitHub
+3. Deploy through Netlify dashboard
+
 ## 🚧 Work in Progress
 
 - **AI Chatbot Integration:**
   - RAG (Retrieval-Augmented Generation) implementation pending
   - Will enable interactive Q&A about my experience and projects
   - Custom knowledge base integration planned
-
-## 📝 License
-
-MIT License - feel free to use this project as a template for your own portfolio!
 
 ## 🤝 Contact
 
