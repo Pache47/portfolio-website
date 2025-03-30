@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #f0f9ff, #e0f2fe, #ffffff);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f0f9ff, #e0f2fe, #ffffff);
+}
+
 @layer utilities {
   .perspective-1000 {
     perspective: 1000px;

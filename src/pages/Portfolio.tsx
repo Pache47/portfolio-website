@@ -7,6 +7,7 @@ import { TypeAnimation } from 'react-type-animation';
 function Portfolio() {
   const [activeSection, setActiveSection] = useState('home');
   const [flippedCard, setFlippedCard] = useState<number | null>(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -53,7 +54,7 @@ function Portfolio() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-sky-50 via-blue-50 to-white">
+    <div className="min-h-screen w-full bg-gradient-to-br from-sky-50 via-blue-50 to-white overflow-x-hidden fixed inset-0">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-lg z-50 border-b border-sky-100">
         <div className="max-w-7xl mx-auto px-4">
@@ -65,7 +66,9 @@ function Portfolio() {
             >
               Pache
             </motion.div>
-            <div className="flex space-x-8">
+            
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex space-x-8">
               {['home', 'about', 'skills', 'projects', 'experience', 'contact'].map((section) => (
                 <button
                   key={section}
@@ -80,6 +83,48 @@ function Portfolio() {
               <Link
                 to="/chat"
                 className="text-sm font-light text-sky-600 hover:text-sky-700 flex items-center"
+              >
+                <MessageSquare className="w-4 h-4 mr-2" />
+                Chat with AI
+              </Link>
+            </div>
+
+            {/* Mobile menu button */}
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="md:hidden text-gray-500 hover:text-sky-600"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {isMenuOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
+          </div>
+
+          {/* Mobile Navigation */}
+          <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
+            <div className="px-2 pt-2 pb-3 space-y-1">
+              {['home', 'about', 'skills', 'projects', 'experience', 'contact'].map((section) => (
+                <button
+                  key={section}
+                  onClick={() => {
+                    scrollToSection(section);
+                    setIsMenuOpen(false);
+                  }}
+                  className={`block w-full text-left px-3 py-2 text-sm font-light transition-colors ${
+                    activeSection === section ? 'text-sky-600' : 'text-gray-500 hover:text-sky-600'
+                  }`}
+                >
+                  {section}
+                </button>
+              ))}
+              <Link
+                to="/chat"
+                onClick={() => setIsMenuOpen(false)}
+                className="block px-3 py-2 text-sm font-light text-sky-600 hover:text-sky-700 flex items-center"
               >
                 <MessageSquare className="w-4 h-4 mr-2" />
                 Chat with AI
@@ -325,6 +370,13 @@ function Portfolio() {
                 className="relative h-[400px] perspective-1000"
                 onHoverStart={() => setFlippedCard(index)}
                 onHoverEnd={() => setFlippedCard(null)}
+                onClick={(e) => {
+                  // Only handle click events on mobile devices
+                  if (window.innerWidth < 768) {
+                    e.preventDefault();
+                    setFlippedCard(flippedCard === index ? null : index);
+                  }
+                }}
               >
                 <motion.div
                   animate={{ rotateY: flippedCard === index ? 180 : 0 }}
