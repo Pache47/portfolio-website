@@ -57,4 +57,8 @@ This site is deployed on Netlify.
 
 ## 🤝 Contact
 
-Feel free to reach out if you have any questions or would like to collaborate! 
+Feel free to reach out if you have any questions or would like to collaborate!
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

@@ -52,11 +52,11 @@ function Portfolio() {
       
     },
     {
-      title: "Pending",
-      description: "pending.",
-      image: "/images/chatbot.png",
-      tech: "pending",
-      github: " ",
+      title: "Age Estimation using Deep Learning",
+      description: "This project aims to estimate age from facial images using a deep learning model based on MobileNetV2. The model is trained and evaluated using custom data generators, leveraging transfer learning for efficient training on resource-constrained devices.",
+      image: "/images/age.png",
+      tech: "Keras, TensorFlow, MobileNetV2, Data Augmentation",
+      github: "https://github.com/Pache47/Age-Estimation-DeepLearning",
       demo: null
     },
     {
@@ -109,7 +109,7 @@ function Portfolio() {
                 className="text-sm font-light text-sky-600 hover:text-sky-700 flex items-center"
               >
                 <MessageSquare className="w-4 h-4 mr-2" />
-                Chat with AI
+                Chat with Viki
               </Link>
             </div>
 
@@ -151,7 +151,7 @@ function Portfolio() {
                 className="block px-3 py-2 text-sm font-light text-sky-600 hover:text-sky-700 flex items-center"
               >
                 <MessageSquare className="w-4 h-4 mr-2" />
-                Chat with AI
+                Chat with Viki
               </Link>
             </div>
           </div>
@@ -287,7 +287,7 @@ function Portfolio() {
               className="space-y-6"
             >
               <p className="text-gray-600 font-light leading-relaxed">
-                I am a passionate software developer with a strong foundation in mathematical and computational sciences. 
+                I am a passionate tech enthusiast with a strong foundation in data and computational sciences. 
                 My academic background combined with practical experience allows me to approach complex problems with both 
                 analytical precision and creative solutions.
               </p>
@@ -567,8 +567,62 @@ function Portfolio() {
         </div>
       </section>
 
+      {/* AI Assistant Section */}
+      <section className="py-20">
+        <div className="max-w-6xl mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="bg-white rounded-2xl shadow-lg overflow-hidden"
+          >
+            <div className="grid md:grid-cols-2">
+              {/* Left side - Content */}
+              <div className="p-8 md:p-12">
+                <h2 className="text-3xl font-light text-gray-900 mb-4">
+                  Meet Viki, My AI Assistant
+                </h2>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Want to learn more about me? Chat with Viki, my personal AI assistant. She can tell you about me, my background and journey.
+                </p>
+                <Link
+                  to="/chat"
+                  className="inline-flex items-center text-sky-600 hover:text-sky-700 transition-colors group"
+                >
+                  <span className="mr-2">Start a conversation</span>
+                  <svg
+                    className="w-5 h-5 transform group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                </Link>
+              </div>
+              
+              {/* Right side - Visual */}
+              <div className="bg-sky-50 p-8 md:p-12 flex items-center justify-center">
+                <div className="relative w-48 h-48">
+                  <div className="absolute inset-0 bg-sky-100 rounded-full animate-pulse"></div>
+                  <div className="absolute inset-4 bg-white rounded-full shadow-lg flex items-center justify-center">
+                    <MessageSquare className="w-16 h-16 text-sky-600" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Contact Section */}
-      <section id="contact" className="py-20">
+      <section id="contact" className="py-20 bg-sky-50">
         <div className="max-w-4xl mx-auto px-4">
           <motion.h2
             initial={{ opacity: 0 }}

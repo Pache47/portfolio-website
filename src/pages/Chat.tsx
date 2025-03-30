@@ -33,7 +33,7 @@ function Chat() {
     setTimeout(() => {
       const aiMessage: Message = {
         id: Date.now() + 1,
-        text: "I'm an AI assistant helping you learn more about the portfolio owner. What would you like to know?",
+        text: "Hello! I'm Viki, a personal AI assistant helping you learn more about Tsega's Journey. I am currently under development, so please try again later.",
         sender: 'ai',
         timestamp: new Date()
       };
@@ -63,7 +63,7 @@ function Chat() {
                 className="text-center text-gray-500"
               >
                 <p className="text-lg font-light mb-2">Welcome to the my personal AI Chatbot!</p>
-                <p className="text-sm">Hi! I'm Tsega's AI assistant. Feel free to ask me anything about him.</p>
+                <p className="text-sm">Hi! I'm Viki, Tsega's AI assistant. Feel free to ask me anything about him.</p>
               </motion.div>
             ) : (
               messages.map(message => (
