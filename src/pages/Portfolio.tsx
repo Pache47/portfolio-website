@@ -29,14 +29,14 @@ function Portfolio() {
   const projects = [
     {
       title: 'Gesture-Controlled Feedback System',
-      description: 'Designed and developed an innovative Kinect Azure-powered system enabling students to rate lectures in real time using hand gestures. The system bridges communication gaps between professors and students by providing actionable feedback and peer-learning insights.',
+      description: 'Designed and developed, with my team, an innovative Kinect Azure-powered system enabling students to rate lectures in real time using hand gestures. The system bridges communication gaps between professors and students by providing actionable feedback and peer-learning insights.',
       tech: 'Kinect Azure SDK, Python, Figma',
       image: '/images/feedback-image.jpeg',
       demo: 'https://www.youtube.com/watch?v=lHmhwdEqd7k'
     },
     {
       title: 'eGROCERY Web Application',
-      description: ' Authored an extensive SRS document detailing the software functionalities and servingas a critical reference for all stakeholders. Architected a robust backend infrastructure with the Flask. Designed a MongoDB database and implemented a comprehensive set of RESTful API endpoints for dynamic inventory and usermanagement',
+      description: ' Led a team of 4 to develop a fullstack web app. Authored an extensive SRS document (check demo) detailing the software functionalities and servingas a critical reference for all stakeholders. Architected a robust backend with Flask and MongoDB, implementing RESTful API endpoints for dynamic inventory and user management',
       tech: 'Flask, HTML/CSS, JavaScript, Rest API, MongoDB',
       image: '/images/egroc.jpeg',
       github: 'https://github.com/jakobnunnendorf/SE_egrocery',
