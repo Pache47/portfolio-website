@@ -50,6 +50,30 @@ function Portfolio() {
       image: '/images/santorini.jpeg',
       github: 'https://github.com/Pache47/Santorini'
       
+    },
+    {
+      title: "Pending",
+      description: "pending.",
+      image: "/images/chatbot.png",
+      tech: "pending",
+      github: " ",
+      demo: null
+    },
+    {
+      title: "Yale Community Marketplace",
+      description: "A dedicated web platform for the Yale community with a simple UI, enabling students and faculty to list items for sale or giveaway. Features include Yale authentication, search/filter capabilities, a simple buyer/seller dashboard, and a bidding system.",
+      image: "/images/marketplace.png",
+      tech: "Flask, SQLite, Python, HTML/CSS",
+      github: "https://github.com/yale-cpsc-419-sp24/Yale-Marketplace",
+      demo: null
+    },
+    {
+      title: "Portfolio Website",
+      description: "A modern, responsive portfolio website built with React and TypeScript. Features include smooth animations, mobile-first design, and an integrated AI chat interface.",
+      image: "/images/portfolio.png",
+      tech: "React, TypeScript, Tailwind CSS, Framer Motion",
+      github: "https://github.com/Pache47/portfolio-website",
+      demo: null
     }
   ];
 
