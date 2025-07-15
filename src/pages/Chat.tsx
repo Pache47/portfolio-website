@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Send } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { createThread, sendMessage, Message as OpenAIMessage } from '../services/openai';
+import { createThread, sendMessage } from '../services/openai';
 
 interface Message {
   id: number;
