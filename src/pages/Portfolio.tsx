@@ -18,12 +18,12 @@ function Portfolio() {
   };
 
   const skills = [
-    { name: 'Languages', icon: '💻', details: 'Python, C/C++, JavaScript, Java, HTML/CSS' },
-    { name: 'Cloud/DevOps', icon: '☁️', details: 'Azure, Git/GitHub, Docker, Kubernetes' },
-    { name: 'AI/ML', icon: '🤖', details: 'TensorFlow, PyTorch, Scikit-learn, LangChain' },
-    { name: 'Databases', icon: '🗄️', details: 'SQL, MongoDB, REST APIs' },
+    { name: 'Languages', icon: '💻', details: 'Python, C/C++, JavaScript, Java, HTML/CSS, SQL, R' },
+    { name: 'Cloud/DevOps', icon: '☁️', details: 'Azure, Git/GitHub, Docker, Kubernetes (OpenShift)' },
+    { name: 'AI/ML', icon: '🤖', details: 'TensorFlow, PyTorch, Scikit-learn, LangChain, RAG' },
+    { name: 'Databases', icon: '🗄️', details: 'PostgreSQL, Qdrant, MongoDB, Redis, REST APIs' },
     { name: 'Frameworks', icon: '⚡', details: 'React, Flask, Power Platform' },
-    { name: 'Tools', icon: '🛠️', details: 'Postman, Figma, MS Copilot Studio, Agile' }
+    { name: 'Tools', icon: '🛠️', details: 'Postman, Figma, MS Copilot Studio' }
   ];
 
   const projects = [
@@ -293,8 +293,8 @@ function Portfolio() {
               </p>
               <p className="text-gray-600 font-light leading-relaxed">
                 I thrive in environments where I can combine my technical expertise with innovative thinking to create 
-                impactful solutions. My expertise spans across software engineering, cloud computing, AI/ML technologies, 
-                solution architecture, and product management, with a particular interest in 
+                impactful solutions. My expertise spans across software/cloud engineering, AI/ML technologies, 
+                solution architecture, as well as product management, with a particular interest in 
                 building elegant products. 
               </p>
             </motion.div>
@@ -491,7 +491,7 @@ function Portfolio() {
                 <div className="flex-grow">
                   <div className="flex justify-between items-start mb-4">
                     <div>
-                      <h3 className="text-2xl font-light text-gray-800">AI/Cloud Engineer Intern</h3>
+                      <h3 className="text-2xl font-light text-gray-800">AI / Cloud Engineer</h3>
                       <p className="text-sky-600 font-light">Robert Bosch (SEA), Singapore</p>
                     </div>
                     <span className="text-gray-500 font-light">May 2024 – Present</span>
@@ -499,19 +499,19 @@ function Portfolio() {
                   <ul className="space-y-3 text-gray-600 font-light">
                     <li className="flex items-start">
                       <span className="text-sky-600 mr-2">•</span>
-                      Developing an agentic AI chatbot (Teams-integrated) leveraging Azure, Microsoft's Copilot Studio and Power Platform to automate demand workflows (~3000 weekly) via NLP/document uploads and enable real-time request tracking through RESTful APIs.
+                      Architected and deployed an enterprise-grade RAG system integrating on-premises data sources and gateways, Azure AI Search,LangChain, and Teams to power AI agents automating manual workflows for over 200+ employees.
                     </li>
                     <li className="flex items-start">
                       <span className="text-sky-600 mr-2">•</span>
-                      Architected and deployed a low-code automation solution that reduced document search time by 70% and estimated saving €500 monthly via OCR and advanced search integration.
+                      Designed and built the full ETL → chunking → embedding → indexing pipeline for agentic document retrieval for over 10K enterprise files, achieving sub-second latency and reducing search time by ~70% based on user testing.
                     </li>
                     <li className="flex items-start">
                       <span className="text-sky-600 mr-2">•</span>
-                      Engineered parallel processing workflow in Power Automate, accelerating survey data processing by 40% for enterprise-scale datasets.
+                      Implementing multi-agent orchestration using MCP servers, self-hosted N8N, Azure services and Copilot Studio, automating request routing and enforcing audit logging for enterprise compliance.
                     </li>
                     <li className="flex items-start">
                       <span className="text-sky-600 mr-2">•</span>
-                      Created scalable prototypes (POCs) and technical documentation by collaborating with stakeholders to align solutions with enterprise needs, including researching and proposing a ticketing system to streamline support processes.
+                      Partnering with cross-functional teams to deliver scalable prototypes (POCs) and technical documentation aligned with enterprise AI strategy.
                     </li>
                   </ul>
                 </div>
@@ -545,19 +545,19 @@ function Portfolio() {
                   <ul className="space-y-3 text-gray-600 font-light">
                     <li className="flex items-start">
                       <span className="text-sky-600 mr-2">•</span>
-                      Collaborated in constructing a publicly accessible database of over 150 spectral line detection for galaxies (Website).
+                      Collaborated in constructing a publicly accessible database (webapp) of over 150 spectral line detection for galaxies.
                     </li>
                     <li className="flex items-start">
                       <span className="text-sky-600 mr-2">•</span>
-                      Engineered a responsive and elegant pagination component for the database web interface. Enhanced user experience by dynamically loading galaxy datasets on demand, optimizing website speed and efficiency by 50%.
+                      Engineered a responsive and elegant pagination component for the database web interface. Enhanced user experience by dynamically loading galaxy datasets on demand, optimizing website speed by reducing initial page load time from ~8 seconds to ~2 seconds.
                     </li>
                     <li className="flex items-start">
                       <span className="text-sky-600 mr-2">•</span>
-                      Integrated a feature leveraging JavaScript, enabling about 500 users to export search results in CSV format.
+                      Integrated features leveraging JavaScript, enabling users to export search results in CSV format.
                     </li>
                     <li className="flex items-start">
                       <span className="text-sky-600 mr-2">•</span>
-                      Guided CI/CD processes including rigorous testing, debugging, deployment, and maintenance of changes, ensuring seamless integration.
+                      Guided CI/CD processes including rigorous testing and debugging to ensure seamless integration.
                     </li>
                   </ul>
                 </div>
